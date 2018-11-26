@@ -10,6 +10,7 @@ RUN npm install
 
 # Bundle app source
 COPY sample.js /usr/src/app/
+COPY cron.sh /usr/src/app/
 
 #CMD [ "node", "sample.js" ]
 ENTRYPOINT ["./cron.sh"]
